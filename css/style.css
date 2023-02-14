@@ -1,0 +1,148 @@
+:root {
+  --poppins: "Poppins", sans-serif;
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: var(--poppins);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 5em 2em;
+  background-color: var(--very-light-gray);
+  color: var(--very-dark-blue);
+}
+
+footer {
+  position: absolute;
+  bottom: .1em;
+  background-color: var(--grayish-blue);
+  padding: .1em .5em;
+  border-radius: 1em;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text h1 {
+  font-size: 1.59rem;
+  font-weight: 200;
+  transition: .6s;
+}
+
+.text h2 {
+  font-size: 1.58rem;
+  font-weight: 700;
+  transition: .6s;
+}
+
+.text .description {
+  font-size: 0.98rem;
+  padding-top: 1.1em;
+  line-height: 1.6;
+  color: var(--grayish-blue);
+  max-width: 36em;
+  text-align: center;
+}
+
+.card-container {
+  display: grid;
+  gap: 1.65em;
+  place-content: center;
+}
+
+.card-container .card {
+  
+  background-color: var(--white);
+  box-shadow: 0 1em 1em 0 hsl(234, 12%, 89%);
+  padding: 1.5em  1.8em;
+  border-radius: .4em;
+  max-width: 19.5em;
+  transition: .6s;
+}
+
+.card:nth-child(1) {
+  border-top: 0.3em solid var(--cyan);
+  margin-top: 4.4em;
+  grid-area: "supervisor";
+
+}
+
+.card:nth-child(2) {
+  border-top: 0.3em solid var(--red);
+  grid-area: "teambuilder";
+}
+
+.card:nth-child(3) {
+  border-top: 0.3em solid var(--orange);
+  grid-area: "karma";
+}
+
+.card:nth-child(4) {
+  border-top: 0.3em solid var(--blue);
+  grid-area: "calculator";
+}
+
+
+.card h3 {
+  font-size: 1.2rem;
+  padding-bottom: .35em;
+}
+
+.card .card-description {
+  font-size: 0.81rem;
+  padding-right: 0.1em;
+  line-height: 1.8;
+  color: var(--grayish-blue);
+}
+
+.card .img-container {
+  display: flex;
+  justify-content: right;
+}
+
+.card .card-img {
+  padding: 1.8em 0 .4em 0;
+  width: 4em;
+
+}
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--very-light-gray);
+}
+.attribution a {
+  color: #121212;
+}
